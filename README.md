@@ -49,7 +49,7 @@ http://127.0.0.1:8000
 
 python evaluate.py
 
-**Output of "python evaluate.py" is saved to "report.txt"**
+Output of "python evaluate.py" is saved to "report.txt"
 
 **Any known limitations or future improvements.**
 

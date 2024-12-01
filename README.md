@@ -1,4 +1,4 @@
-Documentation:
+*Documentation*
 
 Purpose of application:
 

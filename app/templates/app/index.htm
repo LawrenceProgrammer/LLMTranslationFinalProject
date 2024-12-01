@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Translation Tool</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'app/styles.css' %}">
+</head>
+<body>
+  <div class="selection-container">
+    <div>
+      <label for="llm-select">Select LLM:</label>
+      <select id="llm-select">
+        <option value="gpt-4o">GPT-4o</option>
+        <option value="gpt-4o-mini">GPT-4o-mini</option>
+        <option value="gpt-3.5-turbo">GPT-3.5</option>
+        <option value="mistral-large-latest">Mistral Large</option>
+        <option value="mistral-small-latest">Mistral Small</option>
+      </select>
+    </div>
+    <div>
+      <label for="translate-from">From:</label>
+      <select id="translate-from">
+        <option value="English" selected>English</option>
+        <option value="French">French</option>
+        <option value="Spanish">Spanish</option>
+        <option value="Chinese">Chinese</option>
+        <option value="Swahili">Swahili</option>
+        <option value="Arabic">Arabic</option>
+        <option value="German">German</option>
+        <option value="Italian">Italian</option>
+        <option value="Japanese">Japanese</option>
+        <option value="Korean">Korean</option>
+        <option value="Portuguese">Portuguese</option>
+        <option value="Russian">Russian</option>
+        <option value="Hindi">Hindi</option>
+        <option value="Bengali">Bengali</option>
+        <option value="Urdu">Urdu</option>
+        <option value="Malay">Malay</option>
+        <option value="Turkish">Turkish</option>
+        <option value="Vietnamese">Vietnamese</option>
+        <option value="Thai">Thai</option>
+        <option value="Indonesian">Indonesian</option>
+        <option value="Dutch">Dutch</option>
+      </select>
+    </div>
+    <div>
+      <label for="translate-to">To:</label>
+      <select id="translate-to">
+        <option value="English">English</option>
+        <option value="French">French</option>
+        <option value="Spanish">Spanish</option>
+        <option value="Chinese">Chinese</option>
+        <option value="Swahili">Swahili</option>
+        <option value="Arabic">Arabic</option>
+        <option value="German">German</option>
+        <option value="Italian">Italian</option>
+        <option value="Japanese">Japanese</option>
+        <option value="Korean">Korean</option>
+        <option value="Portuguese">Portuguese</option>
+        <option value="Russian">Russian</option>
+        <option value="Hindi">Hindi</option>
+        <option value="Bengali">Bengali</option>
+        <option value="Urdu">Urdu</option>
+        <option value="Malay">Malay</option>
+        <option value="Turkish">Turkish</option>
+        <option value="Vietnamese">Vietnamese</option>
+        <option value="Thai">Thai</option>
+        <option value="Indonesian">Indonesian</option>
+        <option value="Dutch">Dutch</option>
+      </select>
+    </div>
+  </div>
+  <div class="chat-container">
+    <div class="chat-header">
+      <h2>Language Translation Tool</h2>
+    </div>
+    <div id="chat-window" class="chat-window">
+      <!-- Messages will be dynamically added here -->
+    </div>
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Type your message..." />
+      <button id="send-button">Send</button>
+    </div>
+  </div>
+  <script src="{% static 'app/script.js' %}"></script>
+</body>
+</html>

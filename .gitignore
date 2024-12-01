@@ -130,6 +130,10 @@ ENV/
 env.bak/
 venv.bak/
 
+english.xml
+chinese.xml
+french.xml
+
 # Spyder project settings
 .spyderproject
 .spyproject

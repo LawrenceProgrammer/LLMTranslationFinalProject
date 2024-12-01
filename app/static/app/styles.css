@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.selection-container {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center;    /* Center items horizontally */
+  padding: 10px;
+  background: #f4f4f9;
+  border-bottom: 1px solid #ddd;
+}
+
+.selection-container div {
+  margin: 10px 0; /* Add spacing between items */
+}
+
+.selection-container label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.selection-container select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.chat-container {
+  width: 90%;
+  height: 90%; /* Add a fixed height to the container */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Important for positioning child elements */
+}
+
+.chat-header {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  background: #007bff;
+  color: white;
+}
+
+.chat-window {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  border-top: 1px solid #ddd;
+  margin-bottom: 50px; /* Space for the input box */
+}
+
+.chat-input {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  border-top: 1px solid #ddd;
+  background: #fff; /* Ensure it’s visible above content */
+}
+
+#user-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+#send-button {
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#send-button:hover {
+  background: #0056b3;
+}
+
+.chat-message {
+  margin: 10px 0;
+}
+
+.user-message {
+  text-align: right;
+  color: white;
+  background: #007bff;
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 12px;
+}
+
+.bot-message {
+  text-align: left;
+  color: black;
+  background: #e9ecef;
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 12px;
+}

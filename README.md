@@ -8,6 +8,7 @@ Multilingual Machine Translation using LLM
 
 **GPT-4o and Mistral Large**: They were chosen because they are popular main stream LLMs
 which boast good performance on language translation.
+
 **GPT-4o-mini, GPT-3.5, Mistral Small**: This was chosen as a means of comparison with the larger LLMs.
 
 **Dataset details and preprocessing steps**

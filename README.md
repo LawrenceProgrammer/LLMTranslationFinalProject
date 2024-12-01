@@ -1,10 +1,8 @@
-*Documentation*
-
-Purpose of application:
-
+***Documentation***
+**Purpose of application**
 Multilingual Machine Translation using LLM
 
-The LLM used and why it was chosen:
+***The LLM used and why it was chosen***
 
 GPT-4o and Mistral Large: They were chosen because they are popular main stream LLMs
 which boast good performance on language translation.
